@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compendium version="5">
+	<monster>
+		<name>Living Spellbook</name>
+		<size>L</size>
+		<type>construct</type>
+		<alignment>unaligned</alignment>
+		<ac>14 (17 with mage armor)</ac>
+		<hp>90 (12d10+24)</hp>
+		<speed>30 ft., fly 30 ft.</speed>
+		<str>12</str>
+		<dex>18</dex>
+		<con>14</con>
+		<int>18</int>
+		<wis>14</wis>
+		<cha>1</cha>
+		<save></save>
+		<skill></skill>
+		<resist></resist>
+		<immune>poison; bludgeoning, piercing, and slashing from nonmagical weapons that aren't adamantine</immune>
+		<vulnerable>fire</vulnerable>
+		<conditionImmune>charmed, exhaustion, frightened, paralyzed, petrifried, poisoned</conditionImmune>
+		<senses>blindsight 120 ft.</senses>
+		<passive>12</passive>
+		<languages>telepathy 120 ft.</languages>
+		<cr>10</cr>
+		<trait>
+			<name>Immutable Form</name>
+			<text>The spellbook is immune to any spell or effect that would alter its form.</text>
+		</trait>
+		<trait>
+			<name>Magic Resistance</name>
+			<text>The spellbook has advantage on saving throws against spells and other magical effects.</text>
+		</trait>
+		<trait>
+			<name>Spellcasting</name>
+			<text>The spellbook is a 12th-level spellcaster. Its spellcasting ability is Intelligence (save DC 16, +8 to hit with spell attacks). The spellbook has the following wizard spells prepared:</text>
+			<text> </text>
+			<text>• Cantrips (at will): blade ward, light, mage hand, message, prestidigitation)</text>
+			<text>• 1st level (4 slots): mage armor, magic missile, shield</text>
+			<text>• 2nd level (3 slots): invisibility, mirror image</text>
+			<text>• 3rd level (3 slots): glyph of warding, dispel magic</text>
+			<text>• 4th level (3 slots): Otiluke's resilient sphere, polymorph</text>
+			<text>• 5th level (2 slots): animate objects, Bigby's hand</text>
+			<text>• 6th level (1 slot): globe of invulnerability</text>
+		</trait>
+		<trait>
+			<name>Transpose Arcana</name>
+			<text>As a bonus action, the spellbook can expend one spell slot, causing an allied spellcaster to regain a spell slot of that level or lower.</text>
+		</trait>
+		<action>
+			<name>Paper Cut</name>
+			<text>Ranged Weapon Attack: +8 to hit, range 30/60 ft., one creature. Hit: 13 (3d8) slashing damage.</text>
+			<attack>Paper Cut|8|3d8</attack>
+		</action>
+		<action>
+			<name>Mana Burn (Recharge 5-6)</name>
+			<text>The spellbook can expend one spell slot to deal force damage to a target within 60 feet of it. The damage is 18 (4d8) for a 1st-level spell slot, plus 9 (2d8) for each spell level higher than 1st. The target must make a DC 16 Dexterity saving throw, taking full damage on a failed save, or half as much damage on a successful one.</text>
+			<attack>Mana Burn (1st)||4d8</attack>
+			<attack>Mana Burn (2nd)||6d8</attack>
+			<attack>Mana Burn (3rd)||8d8</attack>
+			<attack>Mana Burn (4th)||10d8</attack>
+			<attack>Mana Burn (5th)||12d8</attack>
+			<attack>Mana Burn (6th)||14d8</attack>
+		</action>
+		<spells>blade ward, light, mage hand, message, prestidigitation, mage armor, magic missle, shield, invisibility, mirror image, glyph of warding, dispel magic, Otiluke's resilient sphere, polymorph, animate objects, Bigby's hand, globe of invulnerability</spells>
+	
+	</monster>
+	<monster>
+		<name>Evil Doll</name>
+		<size>T</size>
+		<type>construct fiend</type>
+		<alignment>lawful evil</alignment>
+		<ac>14 (natural armor)</ac>
+		<hp>21 (6d4+6)</hp>
+		<speed>30 ft.</speed>
+		<str>3</str>
+		<dex>16</dex>
+		<con>12</con>
+		<int>10</int>
+		<wis>14</wis>
+		<cha>18</cha>
+		<save></save>
+		<skill>Deception +6, Perception +4, Persuasion +6, Stealth +7</skill>
+		<resist>bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered</resist>
+		<immune>fire, poison</immune>
+		<vulnerable></vulnerable>
+		<conditionImmune>charmed, exhaustion, frightened, paralyzed, petrified, poisoned</conditionImmune>
+		<senses>darkvision 120 ft.</senses>
+		<passive>14</passive>
+		<languages>Infernal, Common, telepathy 60 ft.</languages>
+		<cr>2</cr>
+		<trait>
+			<name>Devil's Sight</name>
+			<text>Magical darkness doesn't impede the doll's darkvision.</text>
+		</trait>
+		<trait>
+			<name>Inanimate</name>
+			<text>While the doll remains motionless, it is indistinguishable from an ordinary doll.</text>
+		</trait>
+		<trait>
+			<name>Innate Spellcasting</name>
+			<text>The doll's spellcasting ability is Charisma (spell save DC 14). The doll can innately cast the following spells, requiring only verbal components:</text>
+			<text> </text>
+			<text>• At will: suggestion</text>
+			<text>• 1/day each: dominate person, modify memory</text>
+		</trait>
+		<trait>
+			<name>Undying Evil</name>
+			<text>If the doll is destroyed, it regains all its hitpoints and reappears at a nearby location in 24 hours unless a remove curse spell is cast on its remains.</text>
+		</trait>
+		<action>
+			<name>Giggle</name>
+			<text>One creature of the doll's choice within 30 feet of it must succeed on a DC 14 Wisdom saving throw or take 7 (2d6) psychic damage and become frightened for 1 minute. The target can repeat the saving throw t the end of each of its turns, with disadvantage if the doll is within line of sight, ending the effect on itself on a success.</text>
+			<attack>Giggle||2d6</attack>
+		</action>
+		<spells>suggestion, dominate person, modify memory</spells>
+	</monster>
+
+	<monster>
+		<name>Drowner</name>
+		<size>M</size>
+		<type>undead</type>
+		<alignment>chaotic evil</alignment>
+		<ac>12</ac>
+		<hp>22 (5d8)</hp>
+		<speed>30 ft., burrow 30 ft., swim 30 ft.</speed>
+		<str>13</str>
+		<dex>15</dex>
+		<con>10</con>
+		<int>5</int>
+		<wis>10</wis>
+		<cha>6</cha>
+		<save></save>
+		<skill>Stealth +4</skill>
+		<resist></resist>
+		<immune></immune>
+		<vulnerable>fire, radiant</vulnerable>
+		<conditionImmune>charmed, exhaustion, poisoned</conditionImmune>
+		<senses>blindsight 30 ft., darkvision 60 ft.</senses>
+		<passive>10</passive>
+		<languages></languages>
+		<cr>1/2</cr>
+		<trait>
+			<name>Pack Tactics</name>
+			<text>The drowner has advantage on attack rolls against a creature if at least one of the drowner's allies is within 5 feet of the creature and the ally isn't incapacitated.</text>
+		</trait>
+		<action>
+			<name>Claws</name>
+			<text>Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 7 (2d4 + 2) slashing damage. Instead of dealing damage, the drowner can grapple the target (escape DC 12).</text>
+			<attack>Claws|4|2d4+2</attack>
+		</action>
+		<action>
+			<name>Drag Under</name>
+			<text>The drowner can drag in deep waters or mud a grappled, incapacitated, paralyzed, or stunned target. It inflicts 9 (2d6 + 2) slashing damage, and the target is removed from play. The target starts to suffocate (p. 183 of the Player's Handbook). Every turn the target can attempt a DC 12 Strength saving throw to resurface. The target reappears in the space it last occupied or in the nearest unoccupied space of its choice.</text>
+			<attack>Drag Under||2d6+2</attack>
+		</action>
+	</monster>
+
+	<monster>
+		<name>Drowned Dead</name>
+		<size>M</size>
+		<type>undead</type>
+		<alignment>chaotic evil</alignment>
+		<ac>15 (natural armor)</ac>
+		<hp>53 (7d8+21)</hp>
+		<speed>30 ft., burrow 30 ft., swim 30 ft.</speed>
+		<str>15</str>
+		<dex>16</dex>
+		<con>16</con>
+		<int>8</int>
+		<wis>13</wis>
+		<cha>10</cha>
+		<save></save>
+		<skill>Perception +3, Stealth +5</skill>
+		<resist></resist>
+		<immune>poison</immune>
+		<vulnerable>fire, radiant</vulnerable>
+		<conditionImmune>charmed, exhaustion, poisoned</conditionImmune>
+		<senses>blindsight 30 ft., darkvision 60 ft.</senses>
+		<passive>13</passive>
+		<languages></languages>
+		<cr>3</cr>
+		<trait>
+			<name>Blood Frenzy</name>
+			<text>The drowned dead has advantage on melee attack rolls against any creature that doesn't have all its hit points.</text>
+		</trait>
+		<trait>
+			<name>Drowning Aura</name>
+			<text>Any living, breathing creature that starts its turn within 10 feet of the drowned dead must succeed a DC 13 Constitution saving throw. On a failed save, a creature begins to drown and is restrained. The restrained creature must repeat the saving throw at the end of its next turn. On a success, the effect ends on the creature. On a failure, the creature falls to 0 hit points and starts making death saving throws. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the drowned dead's Drowning Aura for the next 24 hours. Amphibious creatures are not affected</text>
+		</trait>
+		<action>
+			<name>Multiattack</name>
+			<text>The drowned dead makes two claws attacks.</text>
+		</action>
+		<action>
+			<name>Claws</name>
+			<text>Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit 10 (2d6 + 3) slashing damage. Instead of dealing damage, the drowner can grapple the target (escape DC 13).</text>
+			<attack>Claws|5|2d6+3</attack>
+		</action>
+		<reaction>
+			<name>Uncanny Dodge</name>
+			<text>When an attacker hits the drowned dead with an attack it can use his reaction to half the damage, provided it isn't blind and deafened.</text>
+		</reaction>
+	</monster>
+
+	<monster>
+		<name>Rusalka</name>
+		<size>M</size>
+		<type>fey undead</type>
+		<alignment>neutral evil</alignment>
+		<ac>17 (natural armor)</ac>
+		<hp>97 (13d8+39)</hp>
+		<speed>30 ft., swim 50 ft.</speed>
+		<str>12</str>
+		<dex>18</dex>
+		<con>16</con>
+		<int>10</int>
+		<wis>14</wis>
+		<cha>20</cha>
+		<save></save>
+		<skill>Deception +7, Perception +4, Stealth +6</skill>
+		<resist></resist>
+		<immune></immune>
+		<vulnerable></vulnerable>
+		<conditionImmune></conditionImmune>
+		<senses>darkvision 60 ft.</senses>
+		<passive>14</passive>
+		<languages>Common, Sylvan</languages>
+		<cr>4</cr>
+		<trait>
+			<name>Slippery</name>
+			<text>The rusalka has advantage on ability checks and saving throws made to escape a grapple</text>
+		</trait>
+		<trait>
+			<name>Universal Beauty</name>
+			<text>The rusalka appears different and uniquely beautiful to match the tastes of each humanoid that perceives it. Truesight reveals the rusalka's true undead form.</text>
+		</trait>
+		<trait>
+			<name>Water Bound</name>
+			<text>The rusalka cannot willingly leave the body of water to which it is bound. If forcibly removed, the rusalka takes 11 (2d10) necrotic damage every minute until it returns.</text>
+			<attack>Water Bound||2d10</attack>
+		</trait>
+		<action>
+			<name>Charm</name>
+			<text>One humanoid the rusalka can see within 100 feet of it must succeed on a DC 15 Wisdom saving throw or be magically charmed for 1 hour. The charmed target must spend its turns trying to move as close to the rusalka as it can. The target can't take reactions, and for its action, it can use only the Dash action. If the target suffers any harm, it can repeat the saving throw, ending the effect on a success. If the target successfully saves against the effect, or if the effect ends, the target is immune to the rusalka's Charm for the next 24 hours. The rusalka can have only one target charmed at a time. If it charms another, the effect on the previous target ends.</text>
+		</action>
+		<action>
+			<name>Tresses</name>
+			<text>Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 14 (3d6 + 4) bludgeoning damage and the target is grappled (escape DC 16) and pulled 5 feet toward the rusalka. Until this grapple ends, the target is restrained, the rusalka tries to drown it, and the rusalka can't use its tresses on another target.</text>
+			<attack>Tresses|6|3d6+4</attack>
+		</action>
+		<action>
+			<name>Tickle</name>
+			<text>One creature grappled by the rusalka must succeed on a DC 14 Constitution saving throw of be incapacitated with laughter for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
+		</action>
+	</monster>
+
+	<monster>
+		<name>Armed Skeleton</name>
+		<size>M</size>
+		<type>undead</type>
+		<alignment>lawful evil</alignment>
+		<ac>13 (natural armor)</ac>
+		<hp>26 (4d8+8)</hp>
+		<speed>30 ft.</speed>
+		<str>12</str>
+		<dex>14</dex>
+		<con>15</con>
+		<int>6</int>
+		<wis>8</wis>
+		<cha>6</cha>
+		<save></save>
+		<skill>Athletics +3</skill>
+		<resist></resist>
+		<immune>poison</immune>
+		<vulnerable>bludgeoning</vulnerable>
+		<conditionImmune>exhaustion, poisoned</conditionImmune>
+		<senses>darkvision 60 ft.</senses>
+		<passive>9</passive>
+		<languages>understands all languages it knew in life but can't speak</languages>
+		<cr>1</cr>
+		<trait>
+			<name>Armed Advantage</name>
+			<text>The skeleton has advantage on Strength (Athletics) checks made to grapple</text>
+		</trait>
+
+		<action>
+			<name>Multiattack</name>
+			<text>The skeleton makes four claw attacks.</text>
+		</action>
+		<action>
+			<name>Claw</name>
+			<text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) slashing damage.</text>
+			<attack>Claw|3|1d4+1</attack>
+		</action>
+	</monster>
+
+	<monster>
+		<name>Stygian Skeleton</name>
+		<size>M</size>
+		<type>undead</type>
+		<alignment>chaotic evil</alignment>
+		<ac>16</ac>
+		<hp>97 (15d8+14)</hp>
+		<speed>35 ft.</speed>
+		<str>11</str>
+		<dex>17</dex>
+		<con>14</con>
+		<int>12</int>
+		<wis>10</wis>
+		<cha>10</cha>
+		<save>Wis +3</save>
+		<skill></skill>
+		<resist>piercing and slashing damage from nonmagical weapons; necrotic</resist>
+		<immune>poison</immune>
+		<vulnerable></vulnerable>
+		<conditionImmune>exhaustion, frightened, poisoned, unconscious</conditionImmune>
+		<senses>darkvision 60 ft.</senses>
+		<passive>10</passive>
+		<languages>Abyssal, Common</languages>
+		<cr>7</cr>
+		<trait>
+			<name>Stygian Poison</name>
+			<text>A stygian skeleton's weapons are caked with Stygian poison. A creature affected by Stygian poison has the poisoned condition and takes 1d12+3 necrotic damage at the start of the Stygian skeleton's turn. At the end of each of its turns while poisoned, the creature makes a DC 13 Con saving throw; a successful save ends the poisoning.</text>
+		</trait>
+		<action>
+			<name>Multiattack</name>
+			<text>A stygian skeleton makes two melee attacks or two ranged attacks.</text>
+		</action>
+		<action>
+			<name>Shortsword</name>
+			<text>Melee Weapon Attack: +6 to hit (reach 5 ft.; one creature). Hit: 3d6 + 3 piercing damage plus 1d8 necrotic damage and the target must make a successful DC 13 Con saving throw or be poisoned by Stygian poison.</text>
+			<attack>Shortsword|6|3d6+3+1d8</attack>
+		</action>
+		<action>
+			<name>Claw</name>
+			<text>Melee Weapon Attack: +6 to hit (reach 5 ft.; one creature). Hit: 2d6 + 3 slashing damage plus 1d12 necrotic damage and the target must make a successful DC 13 Con saving throw or be poisoned by Stygian poison.</text>
+			<attack>Claw|6|2d6+3+1d12</attack>
+		</action>
+		<action>
+			<name>Shortbow</name>
+			<text>Ranged Weapon Attack: +6 to hit (range 80 ft./320 ft.; one creature). Hit: 2d6 + 3 piercing damage plus 1d8 necrotic damage and the target must make a successful DC 13 Con saving throw or be poisoned by Stygian poison.</text>
+			<attack>Shortbow|6|2d6+3+1d8</attack>
+		</action>
+	</monster>
+</compendium>
