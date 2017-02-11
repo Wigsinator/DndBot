@@ -13,18 +13,13 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-	if message.content.startswith('!test'):
-		counter = 0
-		tmp = await client.send_message(message.channel, 'Calculating messages...')
-		async for log in client.logs_from(message.channel, limit=100):
-			if log.author == message.author:
-				counter += 1
-
-		await client.edit_message(tmp, 'You have {} messages.'.format(counter))
-	elif message.content.startswith('!sleep'):
+	if message.content.startswith('*ping'):
+		await client.send_message(message.channel, 'Pong!')
+    
+	elif message.content.startswith('*sleep'):
 		await asyncio.sleep(5)
 		await client.send_message(message.channel, 'Done sleeping')
-
+    
 	elif message.content.startswith('*class'):
 		tree = ET.parse('XMLs/Character Files/Classes 2.5.xml')
 		root = tree.getroot()
@@ -54,4 +49,4 @@ async def on_message(message):
 		await client.send_message(message.channel, output)
 
 
-client.run('Mjc5NzA3MTI4NDQ3MzY5MjI1.C4AuMg.VQFvlSGKVQq_2HTNZGTeN0K_HTY')
+client.run('Mjc5NzA3MTI4NDQ3MzY5MjI1.C4A0ew.imNroIewdBK6uDysddZu-pmY-48')
