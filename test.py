@@ -4,6 +4,7 @@ import xml.etree.ElementTree as ET
 
 client = discord.Client()
 
+
 @client.event
 async def on_ready():
 	print('Logged in as')
@@ -17,8 +18,9 @@ async def on_message(message):
 		await client.send_message(message.channel, 'Pong!')
 
 	elif message.content.startswith('*kill'):
-		await client.send_message(message.channel, 'Goodbye!')
-		await client.logout()
+		if message.author.id == '90455370073391104':
+			await client.send_message(message.channel, 'Goodbye!')
+			await client.logout()
     
 	elif message.content.startswith('*sleep'):
 		await asyncio.sleep(5)
