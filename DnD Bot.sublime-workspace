@@ -88,7 +88,7 @@
 			"file": "test.py",
 			"settings":
 			{
-				"buffer_size": 1570,
+				"buffer_size": 1473,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -277,15 +277,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1570,
+						"buffer_size": 1473,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								903,
-								903
+								842,
+								842
 							]
 						],
 						"settings":
@@ -294,7 +294,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 210.0,
+						"translation.y": 45.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

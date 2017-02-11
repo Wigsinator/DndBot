@@ -15,6 +15,10 @@ async def on_ready():
 async def on_message(message):
 	if message.content.startswith('*ping'):
 		await client.send_message(message.channel, 'Pong!')
+
+	elif message.content.startswith('*kill'):
+		await client.send_message(message.channel, 'Goodbye!')
+		await client.logout()
     
 	elif message.content.startswith('*sleep'):
 		await asyncio.sleep(5)
@@ -27,7 +31,6 @@ async def on_message(message):
 		search = 'Barbarian'
 		level = '1'
 		abilities = []
-
 
 		for clas in root.findall('class'):
 			name = clas.get('name')
