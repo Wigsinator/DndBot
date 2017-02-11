@@ -12,16 +12,11 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-	if message.content.startswith('!test'):
-		counter = 0
-		tmp = await client.send_message(message.channel, 'Calculating messages...')
-		async for log in client.logs_from(message.channel, limit=100):
-			if log.author == message.author:
-				counter += 1
-
-		await client.edit_message(tmp, 'You have {} messages.'.format(counter))
-	elif message.content.startswith('!sleep'):
+	if message.content.startswith('*ping'):
+		await client.send_message(message.channel, 'Pong!')
+	elif message.content.startswith('*sleep'):
 		await asyncio.sleep(5)
 		await client.send_message(message.channel, 'Done sleeping')
+	elif
 
-client.run('Mjc5Njk0NjEwMTc4MTEzNTM4.C3-lkA.P5lIVnCvAihReW14Z8j9ow6i9Bk')
+client.run('Mjc5NzA3MTI4NDQ3MzY5MjI1.C3-xEg.Y-eE6T8HtbILiIDe0BvE2few87k')
