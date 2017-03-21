@@ -1,6 +1,6 @@
 # DndBot
 
-##To Do
+## To Do
 
 * ~~Set kill to only respond to me~~
 * Reformat XMLs
