@@ -2,10 +2,10 @@ import discord
 import asyncio
 import xml.etree.ElementTree as ET
 from functions.Class import Class
-from functions.Help import Help
+from functions.Help import Help, prefix
 
 client = discord.Client()
-prefix = '$'
+
 
 @client.event
 async def on_ready():

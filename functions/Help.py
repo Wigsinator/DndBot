@@ -1,5 +1,5 @@
 #help function
-from ..bot.py import prefix
+prefix = '$'
 
 GENERAL = ("The DnD bot is here for a quick and easy reference to information found in the player's handbook." +'\n'+ 
 			"*Created by Wigsinator*"+'\n'+'\n'+
