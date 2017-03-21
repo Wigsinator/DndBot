@@ -1,5 +1,5 @@
 from functions.Class import Class
-from functions.Help import Help
+from functions.Help import HelpOffline as Help
 
 while True:
 	text = input("Give a command, or $ to stop..."+"\n").split()
