@@ -26,7 +26,8 @@
 		</autolevel>
 
 		<autolevel level="1">
-			<feature name = 'Rage'>
+			<feature name='Rage'>
+				<name>Rage</name>
 				<text>In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action.</text>
 				<text>    While raging, you gain the following benefits if you aren't wearing heavy armor:</text>
 				<text />
@@ -39,6 +40,7 @@
 				<text>    Once you have raged the maximum number of times for your barbarian level, you must finish a long rest before you can rage again.  You may rage 2 times at 1st level, 3 at 3rd, 4 at 6th, 5 at 12th, and 6 at 17th.</text>
 			</feature>
 			<feature name='Unarmored Defense'>
+				<name>Unarmored Defense</name>
 				<text>While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit.</text>
 			</feature>
 		</autolevel>
@@ -355,28 +357,28 @@
 		<hd>8</hd>
 		<proficiency>Dexterity, Charisma</proficiency>
 		<spellAbility>Charisma</spellAbility>
-		<autolevel level="1"> <slots>2,2,0,0,0,0,0,0,0,0</slots></autolevel>
-		<autolevel level="2"> <slots>2,3,0,0,0,0,0,0,0,0</slots></autolevel>
-		<autolevel level="3"> <slots>2,4,2,0,0,0,0,0,0,0</slots></autolevel>
-		<autolevel level="4"> <slots>3,4,3,0,0,0,0,0,0,0</slots></autolevel>
-		<autolevel level="5"> <slots>3,4,3,2,0,0,0,0,0,0</slots></autolevel>
-		<autolevel level="6"> <slots>3,4,3,3,0,0,0,0,0,0</slots></autolevel>
-		<autolevel level="7"> <slots>3,4,3,3,1,0,0,0,0,0</slots></autolevel>
-		<autolevel level="8"> <slots>3,4,3,3,2,0,0,0,0,0</slots></autolevel>
-		<autolevel level="9"> <slots>3,4,3,3,3,1,0,0,0,0</slots></autolevel>
-		<autolevel level="10"><slots>4,4,3,3,3,2,0,0,0,0</slots></autolevel>
-		<autolevel level="11"><slots>4,4,3,3,3,2,1,0,0,0</slots></autolevel>
-		<autolevel level="12"><slots>4,4,3,3,3,2,1,0,0,0</slots></autolevel>
-		<autolevel level="13"><slots>4,4,3,3,3,2,1,1,0,0</slots></autolevel>
-		<autolevel level="14"><slots>4,4,3,3,3,2,1,1,0,0</slots></autolevel>
-		<autolevel level="15"><slots>4,4,3,3,3,2,1,1,1,0</slots></autolevel>
-		<autolevel level="16"><slots>4,4,3,3,3,2,1,1,1,0</slots></autolevel>
-		<autolevel level="17"><slots>4,4,3,3,3,2,1,1,1,1</slots></autolevel>
-		<autolevel level="18"><slots>4,4,3,3,3,3,1,1,1,1</slots></autolevel>
-		<autolevel level="19"><slots>4,4,3,3,3,3,2,1,1,1</slots></autolevel>
-		<autolevel level="20"><slots>4,4,3,3,3,3,2,2,1,1</slots></autolevel>
+		<slots level='1' >2,2,0,0,0,0,0,0,0,0</slots>
+		<slots level="2" >2,3,0,0,0,0,0,0,0,0</slots>
+		<slots level="3" >2,4,2,0,0,0,0,0,0,0</slots>
+		<slots level="4" >3,4,3,0,0,0,0,0,0,0</slots>
+		<slots level="5" >3,4,3,2,0,0,0,0,0,0</slots>
+		<slots level="6" >3,4,3,3,0,0,0,0,0,0</slots>
+		<slots level="7" >3,4,3,3,1,0,0,0,0,0</slots>
+		<slots level="8" >3,4,3,3,2,0,0,0,0,0</slots>
+		<slots level="9" >3,4,3,3,3,1,0,0,0,0</slots>
+		<slots level="10">4,4,3,3,3,2,0,0,0,0</slots>
+		<slots level="11">4,4,3,3,3,2,1,0,0,0</slots>
+		<slots level="12">4,4,3,3,3,2,1,0,0,0</slots>
+		<slots level="13">4,4,3,3,3,2,1,1,0,0</slots>
+		<slots level="14">4,4,3,3,3,2,1,1,0,0</slots>
+		<slots level="15">4,4,3,3,3,2,1,1,1,0</slots>
+		<slots level="16">4,4,3,3,3,2,1,1,1,0</slots>
+		<slots level="17">4,4,3,3,3,2,1,1,1,1</slots>
+		<slots level="18">4,4,3,3,3,3,1,1,1,1</slots>
+		<slots level="19">4,4,3,3,3,3,2,1,1,1</slots>
+		<slots level="20">4,4,3,3,3,3,2,2,1,1</slots>
 
-		<autolevel level="1">
+		<autolevel level="start">
 			<feature>
 				<name>Starting Proficiencies</name>
 				<text>You are proficient with the following items, in addition to any proficiencies provided by your race or background.</text>
@@ -440,9 +442,6 @@
 				<name>Jack of All Trades</name>
 				<text>Starting at 2nd level, you can add half your proficiency bonus, rounded down, to any ability check you make that doesn't already include your proficiency bonus.</text>
 			</feature>
-		</autolevel>
-
-		<autolevel level="2">
 			<feature>
 				<name>Song of Rest</name>
 				<text>Beginning at 2nd level, you can use soothing music or oration to help revitalize your wounded allies during a short rest. If you or any friendly creatures who can hear your performance regain hit points by spending Hit Dice at the end of the short rest, each of those creatures regains an extra 1d6 hit points.</text>
@@ -586,6 +585,9 @@
 			</feature>
 		</autolevel>
 
+		<autolevel level="7">
+		</autolevel>
+
 		<autolevel level="8">
 			<feature>
 				<name>Ability Score Improvement</name>
@@ -616,6 +618,9 @@
 				<text>    The chosen spells count as bard spells for you and are included in the number in the Spells Known column of the Bard table.</text>
 				<text>    You learn two additional spells from any class at 14th level and again at 18th level.</text>
 			</feature>
+		</autolevel>
+
+		<autolevel level="11">
 		</autolevel>
 
 		<autolevel level="12">
@@ -709,27 +714,27 @@
 		<hd>8</hd>
 		<proficiency>Wisdom, Charisma</proficiency>
 		<spellAbility>Wisdom</spellAbility>
-		<autolevel level="1"> <slots>3,2,0,0,0,0,0,0,0,0</slots></autolevel>
-		<autolevel level="2"> <slots>3,3,0,0,0,0,0,0,0,0</slots></autolevel>
-		<autolevel level="3"> <slots>3,4,2,0,0,0,0,0,0,0</slots></autolevel>
-		<autolevel level="4"> <slots>4,4,3,0,0,0,0,0,0,0</slots></autolevel>
-		<autolevel level="5"> <slots>4,4,3,2,0,0,0,0,0,0</slots></autolevel>
-		<autolevel level="6"> <slots>4,4,3,3,0,0,0,0,0,0</slots></autolevel>
-		<autolevel level="7"> <slots>4,4,3,3,1,0,0,0,0,0</slots></autolevel>
-		<autolevel level="8"> <slots>4,4,3,3,2,0,0,0,0,0</slots></autolevel>
-		<autolevel level="9"> <slots>4,4,3,3,3,1,0,0,0,0</slots></autolevel>
-		<autolevel level="10"><slots>5,4,3,3,3,2,0,0,0,0</slots></autolevel>
-		<autolevel level="11"><slots>5,4,3,3,3,2,1,0,0,0</slots></autolevel>
-		<autolevel level="12"><slots>5,4,3,3,3,2,1,0,0,0</slots></autolevel>
-		<autolevel level="13"><slots>5,4,3,3,3,2,1,1,0,0</slots></autolevel>
-		<autolevel level="14"><slots>5,4,3,3,3,2,1,1,0,0</slots></autolevel>
-		<autolevel level="15"><slots>5,4,3,3,3,2,1,1,1,0</slots></autolevel>
-		<autolevel level="16"><slots>5,4,3,3,3,2,1,1,1,0</slots></autolevel>
-		<autolevel level="17"><slots>5,4,3,3,3,2,1,1,1,1</slots></autolevel>
-		<autolevel level="18"><slots>5,4,3,3,3,3,1,1,1,1</slots></autolevel>
-		<autolevel level="19"><slots>5,4,3,3,3,3,2,1,1,1</slots></autolevel>
-		<autolevel level="20"><slots>5,4,3,3,3,3,2,2,1,1</slots></autolevel>
-		<autolevel level="1">
+		<slots level="1" >3,2,0,0,0,0,0,0,0,0</slots>
+		<slots level="2" >3,3,0,0,0,0,0,0,0,0</slots>
+		<slots level="3" >3,4,2,0,0,0,0,0,0,0</slots>
+		<slots level="4" >4,4,3,0,0,0,0,0,0,0</slots>
+		<slots level="5" >4,4,3,2,0,0,0,0,0,0</slots>
+		<slots level="6" >4,4,3,3,0,0,0,0,0,0</slots>
+		<slots level="7" >4,4,3,3,1,0,0,0,0,0</slots>
+		<slots level="8" >4,4,3,3,2,0,0,0,0,0</slots>
+		<slots level="9" >4,4,3,3,3,1,0,0,0,0</slots>
+		<slots level="10">5,4,3,3,3,2,0,0,0,0</slots>
+		<slots level="11">5,4,3,3,3,2,1,0,0,0</slots>
+		<slots level="12">5,4,3,3,3,2,1,0,0,0</slots>
+		<slots level="13">5,4,3,3,3,2,1,1,0,0</slots>
+		<slots level="14">5,4,3,3,3,2,1,1,0,0</slots>
+		<slots level="15">5,4,3,3,3,2,1,1,1,0</slots>
+		<slots level="16">5,4,3,3,3,2,1,1,1,0</slots>
+		<slots level="17">5,4,3,3,3,2,1,1,1,1</slots>
+		<slots level="18">5,4,3,3,3,3,1,1,1,1</slots>
+		<slots level="19">5,4,3,3,3,3,2,1,1,1</slots>
+		<slots level="20">5,4,3,3,3,3,2,2,1,1</slots>
+		<autolevel level="start">
 			<feature>
 				<name>Starting Proficiencies</name>
 				<text>You are proficient with the following items, in addition to any proficiencies provided by your race or background.</text>
@@ -1072,6 +1077,9 @@
 			</feature>
 		</autolevel>
 
+		<autolevel level="3">
+		</autolevel>
+
 		<autolevel level="4">
 			<feature>
 				<name>Ability Score Improvement</name>
@@ -1134,6 +1142,9 @@
 			</feature>
 		</autolevel>
 
+		<autolevel level="7">
+		</autolevel>
+
 		<autolevel level="8">
 			<feature>
 				<name>Ability Score Improvement</name>
@@ -1144,9 +1155,6 @@
 				<name>Destroy Undead (CR 1)</name>
 				<text>Starting at 8th level, when an undead of CR 1 or lower fails its saving throw against your Turn Undead feature, the creature is instantly destroyed.</text>
 			</feature>
-		</autolevel>
-
-		<autolevel level="8">
 			<feature optionl="YES">
 				<name>Arcana Domain: Potent Spellcasting</name>
 				<text>Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.</text>
@@ -1185,6 +1193,9 @@
 			</feature>
 		</autolevel>
 
+		<autolevel level="9">
+		</autolevel>
+
 		<autolevel level="10">
 			<feature>
 				<name>Divine Intervention</name>
@@ -1209,11 +1220,17 @@
 			</feature>
 		</autolevel>
 
+		<autolevel level="13">
+		</autolevel>
+
 		<autolevel level="14">
 			<feature>
 				<name>Destroy Undead (CR 3)</name>
 				<text>Starting at 14th level, when an undead of CR 3 or lower fails its saving throw against your Turn Undead feature, the creature is instantly destroyed.</text>
 			</feature>
+		</autolevel>
+
+		<autolevel level="15">
 		</autolevel>
 
 		<autolevel level="16">
@@ -1297,27 +1314,27 @@
 		<hd>8</hd>
 		<proficiency>Intelligence, Wisdom</proficiency>
 		<spellAbility>Wisdom</spellAbility>
-		<autolevel level="1"> <slots>2,2,0,0,0,0,0,0,0,0</slots></autolevel>
-		<autolevel level="2"> <slots>2,3,0,0,0,0,0,0,0,0</slots></autolevel>
-		<autolevel level="3"> <slots>2,4,2,0,0,0,0,0,0,0</slots></autolevel>
-		<autolevel level="4"> <slots>3,4,3,0,0,0,0,0,0,0</slots></autolevel>
-		<autolevel level="5"> <slots>3,4,3,2,0,0,0,0,0,0</slots></autolevel>
-		<autolevel level="6"> <slots>3,4,3,3,0,0,0,0,0,0</slots></autolevel>
-		<autolevel level="7"> <slots>3,4,3,3,1,0,0,0,0,0</slots></autolevel>
-		<autolevel level="8"> <slots>3,4,3,3,2,0,0,0,0,0</slots></autolevel>
-		<autolevel level="9"> <slots>3,4,3,3,3,1,0,0,0,0</slots></autolevel>
-		<autolevel level="10"><slots>4,4,3,3,3,2,0,0,0,0</slots></autolevel>
-		<autolevel level="11"><slots>4,4,3,3,3,2,1,0,0,0</slots></autolevel>
-		<autolevel level="12"><slots>4,4,3,3,3,2,1,0,0,0</slots></autolevel>
-		<autolevel level="13"><slots>4,4,3,3,3,2,1,1,0,0</slots></autolevel>
-		<autolevel level="14"><slots>4,4,3,3,3,2,1,1,0,0</slots></autolevel>
-		<autolevel level="15"><slots>4,4,3,3,3,2,1,1,1,0</slots></autolevel>
-		<autolevel level="16"><slots>4,4,3,3,3,2,1,1,1,0</slots></autolevel>
-		<autolevel level="17"><slots>4,4,3,3,3,2,1,1,1,1</slots></autolevel>
-		<autolevel level="18"><slots>4,4,3,3,3,3,1,1,1,1</slots></autolevel>
-		<autolevel level="19"><slots>4,4,3,3,3,3,2,1,1,1</slots></autolevel>
-		<autolevel level="20"><slots>4,4,3,3,3,3,2,2,1,1</slots></autolevel>
-		<autolevel level="1">
+		<slots level="1" >2,2,0,0,0,0,0,0,0,0</slots>
+		<slots level="2" >2,3,0,0,0,0,0,0,0,0</slots>
+		<slots level="3" >2,4,2,0,0,0,0,0,0,0</slots>
+		<slots level="4" >3,4,3,0,0,0,0,0,0,0</slots>
+		<slots level="5" >3,4,3,2,0,0,0,0,0,0</slots>
+		<slots level="6" >3,4,3,3,0,0,0,0,0,0</slots>
+		<slots level="7" >3,4,3,3,1,0,0,0,0,0</slots>
+		<slots level="8" >3,4,3,3,2,0,0,0,0,0</slots>
+		<slots level="9" >3,4,3,3,3,1,0,0,0,0</slots>
+		<slots level="10">4,4,3,3,3,2,0,0,0,0</slots>
+		<slots level="11">4,4,3,3,3,2,1,0,0,0</slots>
+		<slots level="12">4,4,3,3,3,2,1,0,0,0</slots>
+		<slots level="13">4,4,3,3,3,2,1,1,0,0</slots>
+		<slots level="14">4,4,3,3,3,2,1,1,0,0</slots>
+		<slots level="15">4,4,3,3,3,2,1,1,1,0</slots>
+		<slots level="16">4,4,3,3,3,2,1,1,1,0</slots>
+		<slots level="17">4,4,3,3,3,2,1,1,1,1</slots>
+		<slots level="18">4,4,3,3,3,3,1,1,1,1</slots>
+		<slots level="19">4,4,3,3,3,3,2,1,1,1</slots>
+		<slots level="20">4,4,3,3,3,3,2,2,1,1</slots>
+		<autolevel level="start">
 			<feature>
 				<name>Starting Proficiencies</name>
 				<text>You are proficient with the following items, in addition to any proficiencies provided by your race or background.</text>
@@ -1430,12 +1447,18 @@
 			</feature>
 		</autolevel>
 
+		<autolevel level="3">
+		</autolevel>
+
 		<autolevel level="4">
 			<feature>
 				<name>Ability Score Improvement</name>
 				<text>When you reach 4th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</text>
 				<text>    If your DM allows the use of feats, you may instead take a feat.</text>
 			</feature>
+		</autolevel>
+
+		<autolevel level="5">
 		</autolevel>
 
 		<autolevel level="6">
@@ -1450,12 +1473,18 @@
 			</feature>
 		</autolevel>
 
+		<autolevel level="7">
+		</autolevel>
+
 		<autolevel level="8">
 			<feature>
 				<name>Ability Score Improvement</name>
 				<text>When you reach 8th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</text>
 				<text>    If your DM allows the use of feats, you may instead take a feat.</text>
 			</feature>
+		</autolevel>
+
+		<autolevel level="9">
 		</autolevel>
 
 		<autolevel level="10">
@@ -1469,12 +1498,18 @@
 			</feature>
 		</autolevel>
 
+		<autolevel level="11">
+		</autolevel>
+
 		<autolevel level="12">
 			<feature>
 				<name>Ability Score Improvement</name>
 				<text>When you reach 12th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</text>
 				<text>    If your DM allows the use of feats, you may instead take a feat.</text>
 			</feature>
+		</autolevel>
+
+		<autolevel level="13">
 		</autolevel>
 
 		<autolevel level="14">
@@ -1489,12 +1524,18 @@
 			</feature>
 		</autolevel>
 
+		<autolevel level="15">
+		</autolevel>
+
 		<autolevel level="16">
 			<feature>
 				<name>Ability Score Improvement</name>
 				<text>When you reach 16th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</text>
 				<text>    If your DM allows the use of feats, you may instead take a feat.</text>
 			</feature>
+		</autolevel>
+
+		<autolevel level="17">
 		</autolevel>
 
 		<autolevel level="18">
@@ -1530,25 +1571,25 @@
 		<proficiency>Strength, Constitution</proficiency>
 
 		<spellAbility>Intelligence</spellAbility>
-		<autolevel level="3"> <slots optional="YES">2,2,0,0,0</slots></autolevel>
-		<autolevel level="4"> <slots optional="YES">2,3,0,0,0</slots></autolevel>
-		<autolevel level="5"> <slots optional="YES">2,3,0,0,0</slots></autolevel>
-		<autolevel level="6"> <slots optional="YES">2,3,0,0,0</slots></autolevel>
-		<autolevel level="7"> <slots optional="YES">2,4,2,0,0</slots></autolevel>
-		<autolevel level="8"> <slots optional="YES">2,4,2,0,0</slots></autolevel>
-		<autolevel level="9"> <slots optional="YES">2,4,2,0,0</slots></autolevel>
-		<autolevel level="10"><slots optional="YES">3,4,3,0,0</slots></autolevel>
-		<autolevel level="11"><slots optional="YES">3,4,3,0,0</slots></autolevel>
-		<autolevel level="12"><slots optional="YES">3,4,3,0,0</slots></autolevel>
-		<autolevel level="13"><slots optional="YES">3,4,3,2,0</slots></autolevel>
-		<autolevel level="14"><slots optional="YES">3,4,3,2,0</slots></autolevel>
-		<autolevel level="15"><slots optional="YES">3,4,3,2,0</slots></autolevel>
-		<autolevel level="16"><slots optional="YES">3,4,3,3,0</slots></autolevel>
-		<autolevel level="17"><slots optional="YES">3,4,3,3,0</slots></autolevel>
-		<autolevel level="18"><slots optional="YES">3,4,3,3,0</slots></autolevel>
-		<autolevel level="19"><slots optional="YES">3,4,3,3,1</slots></autolevel>
-		<autolevel level="20"><slots optional="YES">3,4,3,3,1</slots></autolevel>
-		<autolevel level="1">
+		<slots level="3"  optional="YES">2,2,0,0,0</slots>
+		<slots level="4"  optional="YES">2,3,0,0,0</slots>
+		<slots level="5"  optional="YES">2,3,0,0,0</slots>
+		<slots level="6"  optional="YES">2,3,0,0,0</slots>
+		<slots level="7"  optional="YES">2,4,2,0,0</slots>
+		<slots level="8"  optional="YES">2,4,2,0,0</slots>
+		<slots level="9"  optional="YES">2,4,2,0,0</slots>
+		<slots level="10" optional="YES">3,4,3,0,0</slots>
+		<slots level="11" optional="YES">3,4,3,0,0</slots>
+		<slots level="12" optional="YES">3,4,3,0,0</slots>
+		<slots level="13" optional="YES">3,4,3,2,0</slots>
+		<slots level="14" optional="YES">3,4,3,2,0</slots>
+		<slots level="15" optional="YES">3,4,3,2,0</slots>
+		<slots level="16" optional="YES">3,4,3,3,0</slots>
+		<slots level="17" optional="YES">3,4,3,3,0</slots>
+		<slots level="18" optional="YES">3,4,3,3,0</slots>
+		<slots level="19" optional="YES">3,4,3,3,1</slots>
+		<slots level="20" optional="YES">3,4,3,3,1</slots>
+		<autolevel level="start">
 			<feature>
 				<name>Starting Proficiencies</name>
 				<text>You are proficient with the following items, in addition to any proficiencies provided by your race or background.</text>
@@ -2225,7 +2266,7 @@
 		<hd>8</hd>
 		<proficiency>Strength, Dexterity</proficiency>
 		<SpellAbility>Wisdom</SpellAbility>
-		<autolevel level="1">
+		<autolevel level="start">
 			<feature>
 				<name>Starting Proficiencies</name>
 				<text>You are proficient with the following items, in addition to any proficiencies provided by your race or background.</text>
@@ -2909,7 +2950,7 @@
 		<hd>8</hd>
 		<proficiency>Wisdom</proficiency>
 		<spellAbility>Intelligence</spellAbility>
-			<autolevel level="1">
+			<autolevel level="start">
 				<feature>
 					<name>Starting Proficiencies</name>
 					<text>You are proficient with the following items, in addition to any proficiencies provided by your race or background.</text>
@@ -3265,27 +3306,27 @@
 		<hd>10</hd>
 		<proficiency>Wisdom, Charisma</proficiency>
 		<spellAbility>Charisma</spellAbility>
-		<autolevel level="1"> <slots>0,0,0,0,0,0</slots></autolevel>
-		<autolevel level="2"> <slots>0,2,0,0,0,0</slots></autolevel>
-		<autolevel level="3"> <slots>0,3,0,0,0,0</slots></autolevel>
-		<autolevel level="4"> <slots>0,3,0,0,0,0</slots></autolevel>
-		<autolevel level="5"> <slots>0,4,2,0,0,0</slots></autolevel>
-		<autolevel level="6"> <slots>0,4,2,0,0,0</slots></autolevel>
-		<autolevel level="7"> <slots>0,4,3,0,0,0</slots></autolevel>
-		<autolevel level="8"> <slots>0,4,3,0,0,0</slots></autolevel>
-		<autolevel level="9"> <slots>0,4,3,2,0,0</slots></autolevel>
-		<autolevel level="10"><slots>0,4,3,2,0,0</slots></autolevel>
-		<autolevel level="11"><slots>0,4,3,3,0,0</slots></autolevel>
-		<autolevel level="12"><slots>0,4,3,3,0,0</slots></autolevel>
-		<autolevel level="13"><slots>0,4,3,3,1,0</slots></autolevel>
-		<autolevel level="14"><slots>0,4,3,3,1,0</slots></autolevel>
-		<autolevel level="15"><slots>0,4,3,3,2,0</slots></autolevel>
-		<autolevel level="16"><slots>0,4,3,3,2,0</slots></autolevel>
-		<autolevel level="17"><slots>0,4,3,3,3,1</slots></autolevel>
-		<autolevel level="18"><slots>0,4,3,3,3,1</slots></autolevel>
-		<autolevel level="19"><slots>0,4,3,3,3,2</slots></autolevel>
-		<autolevel level="20"><slots>0,4,3,3,3,2</slots></autolevel>
-		<autolevel level="1">
+		<slots level="1" >0,0,0,0,0,0</slots>
+		<slots level="2" >0,2,0,0,0,0</slots>
+		<slots level="3" >0,3,0,0,0,0</slots>
+		<slots level="4" >0,3,0,0,0,0</slots>
+		<slots level="5" >0,4,2,0,0,0</slots>
+		<slots level="6" >0,4,2,0,0,0</slots>
+		<slots level="7" >0,4,3,0,0,0</slots>
+		<slots level="8" >0,4,3,0,0,0</slots>
+		<slots level="9" >0,4,3,2,0,0</slots>
+		<slots level="10">0,4,3,2,0,0</slots>
+		<slots level="11">0,4,3,3,0,0</slots>
+		<slots level="12">0,4,3,3,0,0</slots>
+		<slots level="13">0,4,3,3,1,0</slots>
+		<slots level="14">0,4,3,3,1,0</slots>
+		<slots level="15">0,4,3,3,2,0</slots>
+		<slots level="16">0,4,3,3,2,0</slots>
+		<slots level="17">0,4,3,3,3,1</slots>
+		<slots level="18">0,4,3,3,3,1</slots>
+		<slots level="19">0,4,3,3,3,2</slots>
+		<slots level="20">0,4,3,3,3,2</slots>
+		<autolevel level="start">
 			<feature>
 				<name>Starting Proficiencies</name>
 				<text>You are proficient with the following items, in addition to any proficiencies provided by your race or background.</text>
@@ -3614,6 +3655,9 @@
 			</feature>
 		</autolevel>
 
+		<autolevel level="9">
+		</autolevel>
+
 		<autolevel level="10">
 			<feature>
 				<name>Aura of Courage</name>
@@ -3635,6 +3679,9 @@
 				<text>When you reach 12th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</text>
 				<text>    If your DM allows the use of feats, you may instead take a feat.</text>
 			</feature>
+		</autolevel>
+
+		<autolevel level="13">
 		</autolevel>
 
 		<autolevel level="14">
@@ -3675,6 +3722,9 @@
 				<text>When you reach 16th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</text>
 				<text>    If your DM allows the use of feats, you may instead take a feat.</text>
 			</feature>
+		</autolevel>
+
+		<autolevel level="17">
 		</autolevel>
 
 		<autolevel level="18">
@@ -3745,27 +3795,27 @@
 		<hd>10</hd>
 		<proficiency>Strength, Dexterity</proficiency>
 		<spellAbility>Wisdom</spellAbility>
-		<autolevel level="1"> <slots>0,0,0,0,0,0</slots></autolevel>
-		<autolevel level="2"> <slots>0,2,0,0,0,0</slots></autolevel>
-		<autolevel level="3"> <slots>0,3,0,0,0,0</slots></autolevel>
-		<autolevel level="4"> <slots>0,3,0,0,0,0</slots></autolevel>
-		<autolevel level="5"> <slots>0,4,2,0,0,0</slots></autolevel>
-		<autolevel level="6"> <slots>0,4,2,0,0,0</slots></autolevel>
-		<autolevel level="7"> <slots>0,4,3,0,0,0</slots></autolevel>
-		<autolevel level="8"> <slots>0,4,3,0,0,0</slots></autolevel>
-		<autolevel level="9"> <slots>0,4,3,2,0,0</slots></autolevel>
-		<autolevel level="10"><slots>0,4,3,2,0,0</slots></autolevel>
-		<autolevel level="11"><slots>0,4,3,3,0,0</slots></autolevel>
-		<autolevel level="12"><slots>0,4,3,3,0,0</slots></autolevel>
-		<autolevel level="13"><slots>0,4,3,3,1,0</slots></autolevel>
-		<autolevel level="14"><slots>0,4,3,3,1,0</slots></autolevel>
-		<autolevel level="15"><slots>0,4,3,3,2,0</slots></autolevel>
-		<autolevel level="16"><slots>0,4,3,3,2,0</slots></autolevel>
-		<autolevel level="17"><slots>0,4,3,3,3,1</slots></autolevel>
-		<autolevel level="18"><slots>0,4,3,3,3,1</slots></autolevel>
-		<autolevel level="19"><slots>0,4,3,3,3,2</slots></autolevel>
-		<autolevel level="20"><slots>0,4,3,3,3,2</slots></autolevel>
-		<autolevel level="1">
+		<slots level="1" >0,0,0,0,0,0</slots>
+		<slots level="2" >0,2,0,0,0,0</slots>
+		<slots level="3" >0,3,0,0,0,0</slots>
+		<slots level="4" >0,3,0,0,0,0</slots>
+		<slots level="5" >0,4,2,0,0,0</slots>
+		<slots level="6" >0,4,2,0,0,0</slots>
+		<slots level="7" >0,4,3,0,0,0</slots>
+		<slots level="8" >0,4,3,0,0,0</slots>
+		<slots level="9" >0,4,3,2,0,0</slots>
+		<slots level="10">0,4,3,2,0,0</slots>
+		<slots level="11">0,4,3,3,0,0</slots>
+		<slots level="12">0,4,3,3,0,0</slots>
+		<slots level="13">0,4,3,3,1,0</slots>
+		<slots level="14">0,4,3,3,1,0</slots>
+		<slots level="15">0,4,3,3,2,0</slots>
+		<slots level="16">0,4,3,3,2,0</slots>
+		<slots level="17">0,4,3,3,3,1</slots>
+		<slots level="18">0,4,3,3,3,1</slots>
+		<slots level="19">0,4,3,3,3,2</slots>
+		<slots level="20">0,4,3,3,3,2</slots>
+		<autolevel level="start">
 			<feature>
 				<name>Starting Proficiencies</name>
 				<text>You are proficient with the following items, in addition to any proficiencies provided by your race or background.</text>
@@ -3997,6 +4047,9 @@
 			</feature>
 		</autolevel>
 
+		<autolevel level="9">
+		</autolevel>
+
 		<autolevel level="10">
 			<feature>
 				<name>Hide in Plain Sight</name>
@@ -4038,6 +4091,9 @@
 				<text>When you reach 12th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</text>
 				<text>    If your DM allows the use of feats, you may instead take a feat.</text>
 			</feature>
+		</autolevel>
+
+		<autolevel level="13">
 		</autolevel>
 
 		<autolevel level="14">
@@ -4086,6 +4142,9 @@
 			</feature>
 		</autolevel>
 
+		<autolevel level="17">
+		</autolevel>
+
 		<autolevel level="18">
 			<feature>
 				<name>Feral Senses</name>
@@ -4112,7 +4171,7 @@
 	<class name='Ranger (Variant)'>
 		<hd>10</hd>
 		<proficiency>Strength, Dexterity</proficiency>
-		<autolevel level="1">
+		<autolevel level="start">
 			<feature>
 				<name>Starting Proficiencies</name>
 				<text>You are proficient with the following items, in addition to any proficiencies provided by your race or background.</text>
@@ -4132,7 +4191,9 @@
 				<text />
 				<text>Alternatively, you may start with 5d4 x 10 gp to buy your own equipment.</text>
 			</feature>
+		</autolevel>
 
+		<autolevel level="1">
 			<feature>
 				<name>Favored Enemy</name>
 				<text>Beginning at 1st level, you have significant experience studying, tracking, hunting, and even talking to a certain type of enemy.</text>
@@ -4775,25 +4836,26 @@
 		<proficiency>Dexterity, Intelligence</proficiency>
 
 		<spellAbility>Intelligence</spellAbility>
-		<autolevel level="3"> <slots optional="YES">3,2,0,0,0</slots></autolevel>
-		<autolevel level="4"> <slots optional="YES">3,3,0,0,0</slots></autolevel>
-		<autolevel level="5"> <slots optional="YES">3,3,0,0,0</slots></autolevel>
-		<autolevel level="6"> <slots optional="YES">3,3,0,0,0</slots></autolevel>
-		<autolevel level="7"> <slots optional="YES">3,4,2,0,0</slots></autolevel>
-		<autolevel level="8"> <slots optional="YES">3,4,2,0,0</slots></autolevel>
-		<autolevel level="9"> <slots optional="YES">3,4,2,0,0</slots></autolevel>
-		<autolevel level="10"><slots optional="YES">4,4,3,0,0</slots></autolevel>
-		<autolevel level="11"><slots optional="YES">4,4,3,0,0</slots></autolevel>
-		<autolevel level="12"><slots optional="YES">4,4,3,0,0</slots></autolevel>
-		<autolevel level="13"><slots optional="YES">4,4,3,2,0</slots></autolevel>
-		<autolevel level="14"><slots optional="YES">4,4,3,2,0</slots></autolevel>
-		<autolevel level="15"><slots optional="YES">4,4,3,2,0</slots></autolevel>
-		<autolevel level="16"><slots optional="YES">4,4,3,3,0</slots></autolevel>
-		<autolevel level="17"><slots optional="YES">4,4,3,3,0</slots></autolevel>
-		<autolevel level="18"><slots optional="YES">4,4,3,3,0</slots></autolevel>
-		<autolevel level="19"><slots optional="YES">4,4,3,3,1</slots></autolevel>
-		<autolevel level="20"><slots optional="YES">4,4,3,3,1</slots></autolevel>
-		<autolevel level="1">
+		<slots  level="3"  optional="YES">3,2,0,0,0</slots>
+		<slots  level="4"  optional="YES">3,3,0,0,0</slots>
+		<slots  level="5"  optional="YES">3,3,0,0,0</slots>
+		<slots  level="6"  optional="YES">3,3,0,0,0</slots>
+		<slots  level="7"  optional="YES">3,4,2,0,0</slots>
+		<slots  level="8"  optional="YES">3,4,2,0,0</slots>
+		<slots  level="9"  optional="YES">3,4,2,0,0</slots>
+		<slots  level="10" optional="YES">4,4,3,0,0</slots>
+		<slots  level="11" optional="YES">4,4,3,0,0</slots>
+		<slots  level="12" optional="YES">4,4,3,0,0</slots>
+		<slots  level="13" optional="YES">4,4,3,2,0</slots>
+		<slots  level="14" optional="YES">4,4,3,2,0</slots>
+		<slots  level="15" optional="YES">4,4,3,2,0</slots>
+		<slots  level="16" optional="YES">4,4,3,3,0</slots>
+		<slots  level="17" optional="YES">4,4,3,3,0</slots>
+		<slots  level="18" optional="YES">4,4,3,3,0</slots>
+		<slots  level="19" optional="YES">4,4,3,3,1</slots>
+		<slots  level="20" optional="YES">4,4,3,3,1</slots>
+		
+		<autolevel level="start">
 			<feature>
 				<name>Starting Proficiencies</name>
 				<text>You are proficient with the following items, in addition to any proficiencies provided by your race or background.</text>
@@ -4819,7 +4881,7 @@
 			<feature>
 				<name>Expertise</name>
 				<text>At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with thieves' tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</text>
-				<text>    At 6th level, you can choose two more of your proficiencies (in skills or with thieves' tools) to gain this benefit.</text>
+				<text>At 6th level, you can choose two more of your proficiencies (in skills or with thieves' tools) to gain this benefit.</text>
 			</feature>
 			<feature>
 				<name>Sneak Attack</name>
@@ -5130,27 +5192,27 @@
 		<hd>6</hd>
 		<proficiency>Constitution, Charisma</proficiency>
 		<spellAbility>Charisma</spellAbility>
-		<autolevel level="1"> <slots>4,2,0,0,0,0,0,0,0,0</slots></autolevel>
-		<autolevel level="2"> <slots>4,3,0,0,0,0,0,0,0,0</slots></autolevel>
-		<autolevel level="3"> <slots>4,4,2,0,0,0,0,0,0,0</slots></autolevel>
-		<autolevel level="4"> <slots>5,4,3,0,0,0,0,0,0,0</slots></autolevel>
-		<autolevel level="5"> <slots>5,4,3,2,0,0,0,0,0,0</slots></autolevel>
-		<autolevel level="6"> <slots>5,4,3,3,0,0,0,0,0,0</slots></autolevel>
-		<autolevel level="7"> <slots>5,4,3,3,1,0,0,0,0,0</slots></autolevel>
-		<autolevel level="8"> <slots>5,4,3,3,2,0,0,0,0,0</slots></autolevel>
-		<autolevel level="9"> <slots>5,4,3,3,3,1,0,0,0,0</slots></autolevel>
-		<autolevel level="10"><slots>6,4,3,3,3,2,0,0,0,0</slots></autolevel>
-		<autolevel level="11"><slots>6,4,3,3,3,2,1,0,0,0</slots></autolevel>
-		<autolevel level="12"><slots>6,4,3,3,3,2,1,0,0,0</slots></autolevel>
-		<autolevel level="13"><slots>6,4,3,3,3,2,1,1,0,0</slots></autolevel>
-		<autolevel level="14"><slots>6,4,3,3,3,2,1,1,0,0</slots></autolevel>
-		<autolevel level="15"><slots>6,4,3,3,3,2,1,1,1,0</slots></autolevel>
-		<autolevel level="16"><slots>6,4,3,3,3,2,1,1,1,0</slots></autolevel>
-		<autolevel level="17"><slots>6,4,3,3,3,2,1,1,1,1</slots></autolevel>
-		<autolevel level="18"><slots>6,4,3,3,3,3,1,1,1,1</slots></autolevel>
-		<autolevel level="19"><slots>6,4,3,3,3,3,2,1,1,1</slots></autolevel>
-		<autolevel level="20"><slots>6,4,3,3,3,3,2,2,1,1</slots></autolevel>
-		<autolevel level="1">
+		<slots level="1" >4,2,0,0,0,0,0,0,0,0</slots>
+		<slots level="2" >4,3,0,0,0,0,0,0,0,0</slots>
+		<slots level="3" >4,4,2,0,0,0,0,0,0,0</slots>
+		<slots level="4" >5,4,3,0,0,0,0,0,0,0</slots>
+		<slots level="5" >5,4,3,2,0,0,0,0,0,0</slots>
+		<slots level="6" >5,4,3,3,0,0,0,0,0,0</slots>
+		<slots level="7" >5,4,3,3,1,0,0,0,0,0</slots>
+		<slots level="8" >5,4,3,3,2,0,0,0,0,0</slots>
+		<slots level="9" >5,4,3,3,3,1,0,0,0,0</slots>
+		<slots level="10">6,4,3,3,3,2,0,0,0,0</slots>
+		<slots level="11">6,4,3,3,3,2,1,0,0,0</slots>
+		<slots level="12">6,4,3,3,3,2,1,0,0,0</slots>
+		<slots level="13">6,4,3,3,3,2,1,1,0,0</slots>
+		<slots level="14">6,4,3,3,3,2,1,1,0,0</slots>
+		<slots level="15">6,4,3,3,3,2,1,1,1,0</slots>
+		<slots level="16">6,4,3,3,3,2,1,1,1,0</slots>
+		<slots level="17">6,4,3,3,3,2,1,1,1,1</slots>
+		<slots level="18">6,4,3,3,3,3,1,1,1,1</slots>
+		<slots level="19">6,4,3,3,3,3,2,1,1,1</slots>
+		<slots level="20">6,4,3,3,3,3,2,2,1,1</slots>
+		<autolevel level="start">
 			<feature>
 				<name>Starting Proficiencies</name>
 				<text>You are proficient with the following items, in addition to any proficiencies provided by your race or background.</text>
@@ -5493,6 +5555,9 @@
 			</feature>
 		</autolevel>
 
+		<autolevel level="5">
+		</autolevel>
+
 		<autolevel level="6">
 			<feature optional="YES">
 				<name>Draconic Bloodline: Elemental Affinity</name>
@@ -5529,12 +5594,18 @@
 			</feature>
 		</autolevel>
 
+		<autolevel level="7">
+		</autolevel>
+
 		<autolevel level="8">
 			<feature>
 				<name>Ability Score Improvement</name>
 				<text>When you reach 8th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</text>
 				<text>    If your DM allows the use of feats, you may instead take a feat.</text>
 			</feature>
+		</autolevel>
+
+		<autolevel level="9">
 		</autolevel>
 
 		<autolevel level="10">
@@ -5578,12 +5649,18 @@
 			</feature>
 		</autolevel>
 
+		<autolevel level="11">
+		</autolevel>
+
 		<autolevel level="12">
 			<feature>
 				<name>Ability Score Improvement</name>
 				<text>When you reach 12th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</text>
 				<text>    If your DM allows the use of feats, you may instead take a feat.</text>
 			</feature>
+		</autolevel>
+
+		<autolevel level="13">
 		</autolevel>
 
 		<autolevel level="14">
@@ -5609,6 +5686,9 @@
 				<name>Shadow: Shadow Walk</name>
 				<text>At 14th level, you gain the ability to step from one shadow into another. When you are in dim light or darkness, as a bonus action, you can teleport up to 120 feet to an unoccupied space you can see that is also in dim light or darkness.</text>
 			</feature>
+		</autolevel>
+
+		<autolevel level="15">
 		</autolevel>
 
 		<autolevel level="16">
@@ -5704,27 +5784,27 @@
 		<hd>8</hd>
 		<proficiency>Wisdom, Charisma</proficiency>
 		<spellAbility>Charisma</spellAbility>
-		<autolevel level="1"> <slots>2,1,0,0,0,0,0,0,0,0</slots></autolevel>
-		<autolevel level="2"> <slots>2,2,0,0,0,0,0,0,0,0</slots></autolevel>
-		<autolevel level="3"> <slots>2,0,2,0,0,0,0,0,0,0</slots></autolevel>
-		<autolevel level="4"> <slots>3,0,2,0,0,0,0,0,0,0</slots></autolevel>
-		<autolevel level="5"> <slots>3,0,0,2,0,0,0,0,0,0</slots></autolevel>
-		<autolevel level="6"> <slots>3,0,0,2,0,0,0,0,0,0</slots></autolevel>
-		<autolevel level="7"> <slots>3,0,0,0,2,0,0,0,0,0</slots></autolevel>
-		<autolevel level="8"> <slots>3,0,0,0,2,0,0,0,0,0</slots></autolevel>
-		<autolevel level="9"> <slots>3,0,0,0,0,2,0,0,0,0</slots></autolevel>
-		<autolevel level="10"><slots>4,0,0,0,0,2,0,0,0,0</slots></autolevel>
-		<autolevel level="11"><slots>4,0,0,0,0,3,0,0,0,0</slots></autolevel>
-		<autolevel level="12"><slots>4,0,0,0,0,3,0,0,0,0</slots></autolevel>
-		<autolevel level="13"><slots>4,0,0,0,0,3,0,0,0,0</slots></autolevel>
-		<autolevel level="14"><slots>4,0,0,0,0,3,0,0,0,0</slots></autolevel>
-		<autolevel level="15"><slots>4,0,0,0,0,3,0,0,0,0</slots></autolevel>
-		<autolevel level="16"><slots>4,0,0,0,0,3,0,0,0,0</slots></autolevel>
-		<autolevel level="17"><slots>4,0,0,0,0,4,0,0,0,0</slots></autolevel>
-		<autolevel level="18"><slots>4,0,0,0,0,4,0,0,0,0</slots></autolevel>
-		<autolevel level="19"><slots>4,0,0,0,0,4,0,0,0,0</slots></autolevel>
-		<autolevel level="20"><slots>4,0,0,0,0,4,0,0,0,0</slots></autolevel>
-		<autolevel level="1">
+		<slots level="1" >2,1,0,0,0,0,0,0,0,0</slots>
+		<slots level="2" >2,2,0,0,0,0,0,0,0,0</slots>
+		<slots level="3" >2,0,2,0,0,0,0,0,0,0</slots>
+		<slots level="4" >3,0,2,0,0,0,0,0,0,0</slots>
+		<slots level="5" >3,0,0,2,0,0,0,0,0,0</slots>
+		<slots level="6" >3,0,0,2,0,0,0,0,0,0</slots>
+		<slots level="7" >3,0,0,0,2,0,0,0,0,0</slots>
+		<slots level="8" >3,0,0,0,2,0,0,0,0,0</slots>
+		<slots level="9" >3,0,0,0,0,2,0,0,0,0</slots>
+		<slots level="10">4,0,0,0,0,2,0,0,0,0</slots>
+		<slots level="11">4,0,0,0,0,3,0,0,0,0</slots>
+		<slots level="12">4,0,0,0,0,3,0,0,0,0</slots>
+		<slots level="13">4,0,0,0,0,3,0,0,0,0</slots>
+		<slots level="14">4,0,0,0,0,3,0,0,0,0</slots>
+		<slots level="15">4,0,0,0,0,3,0,0,0,0</slots>
+		<slots level="16">4,0,0,0,0,3,0,0,0,0</slots>
+		<slots level="17">4,0,0,0,0,4,0,0,0,0</slots>
+		<slots level="18">4,0,0,0,0,4,0,0,0,0</slots>
+		<slots level="19">4,0,0,0,0,4,0,0,0,0</slots>
+		<slots level="20">4,0,0,0,0,4,0,0,0,0</slots>
+		<autolevel level="start">
 			<feature>
 				<name>Starting Proficiencies</name>
 				<text>You are proficient with the following items, in addition to any proficiencies provided by your race or background.</text>
@@ -5926,6 +6006,7 @@
 				<text>You learn an additional eldritch invocation</text>
 			</feature>
 		</autolevel>
+
 		<autolevel level="6">
 			<feature optional="YES">
 				<name>The Archfey: Misty Escape</name>
@@ -7056,27 +7137,27 @@
 		<hd>6</hd>
 		<proficiency>Intelligence, Wisdom</proficiency>
 		<spellAbility>Intelligence</spellAbility>
-		<autolevel level="1"> <slots>3,2,0,0,0,0,0,0,0,0</slots></autolevel>
-		<autolevel level="2"> <slots>3,3,0,0,0,0,0,0,0,0</slots></autolevel>
-		<autolevel level="3"> <slots>3,4,2,0,0,0,0,0,0,0</slots></autolevel>
-		<autolevel level="4"> <slots>4,4,3,0,0,0,0,0,0,0</slots></autolevel>
-		<autolevel level="5"> <slots>4,4,3,2,0,0,0,0,0,0</slots></autolevel>
-		<autolevel level="6"> <slots>4,4,3,3,0,0,0,0,0,0</slots></autolevel>
-		<autolevel level="7"> <slots>4,4,3,3,1,0,0,0,0,0</slots></autolevel>
-		<autolevel level="8"> <slots>4,4,3,3,2,0,0,0,0,0</slots></autolevel>
-		<autolevel level="9"> <slots>4,4,3,3,3,1,0,0,0,0</slots></autolevel>
-		<autolevel level="10"><slots>5,4,3,3,3,2,0,0,0,0</slots></autolevel>
-		<autolevel level="11"><slots>5,4,3,3,3,2,1,0,0,0</slots></autolevel>
-		<autolevel level="12"><slots>5,4,3,3,3,2,1,0,0,0</slots></autolevel>
-		<autolevel level="13"><slots>5,4,3,3,3,2,1,1,0,0</slots></autolevel>
-		<autolevel level="14"><slots>5,4,3,3,3,2,1,1,0,0</slots></autolevel>
-		<autolevel level="15"><slots>5,4,3,3,3,2,1,1,1,0</slots></autolevel>
-		<autolevel level="16"><slots>5,4,3,3,3,2,1,1,1,0</slots></autolevel>
-		<autolevel level="17"><slots>5,4,3,3,3,2,1,1,1,1</slots></autolevel>
-		<autolevel level="18"><slots>5,4,3,3,3,3,1,1,1,1</slots></autolevel>
-		<autolevel level="19"><slots>5,4,3,3,3,3,2,1,1,1</slots></autolevel>
-		<autolevel level="20"><slots>5,4,3,3,3,3,2,2,1,1</slots></autolevel>
-		<autolevel level="1">
+		<slots level="1" >3,2,0,0,0,0,0,0,0,0</slots>
+		<slots level="2" >3,3,0,0,0,0,0,0,0,0</slots>
+		<slots level="3" >3,4,2,0,0,0,0,0,0,0</slots>
+		<slots level="4" >4,4,3,0,0,0,0,0,0,0</slots>
+		<slots level="5" >4,4,3,2,0,0,0,0,0,0</slots>
+		<slots level="6" >4,4,3,3,0,0,0,0,0,0</slots>
+		<slots level="7" >4,4,3,3,1,0,0,0,0,0</slots>
+		<slots level="8" >4,4,3,3,2,0,0,0,0,0</slots>
+		<slots level="9" >4,4,3,3,3,1,0,0,0,0</slots>
+		<slots level="10">5,4,3,3,3,2,0,0,0,0</slots>
+		<slots level="11">5,4,3,3,3,2,1,0,0,0</slots>
+		<slots level="12">5,4,3,3,3,2,1,0,0,0</slots>
+		<slots level="13">5,4,3,3,3,2,1,1,0,0</slots>
+		<slots level="14">5,4,3,3,3,2,1,1,0,0</slots>
+		<slots level="15">5,4,3,3,3,2,1,1,1,0</slots>
+		<slots level="16">5,4,3,3,3,2,1,1,1,0</slots>
+		<slots level="17">5,4,3,3,3,2,1,1,1,1</slots>
+		<slots level="18">5,4,3,3,3,3,1,1,1,1</slots>
+		<slots level="19">5,4,3,3,3,3,2,1,1,1</slots>
+		<slots level="20">5,4,3,3,3,3,2,2,1,1</slots>
+		<autolevel level="start">
 			<feature>
 				<name>Starting Proficiencies</name>
 				<text>You are proficient with the following items, in addition to any proficiencies provided by your race or background.</text>
@@ -7304,12 +7385,18 @@
 			</feature>
 		</autolevel>
 
+		<autolevel level="3">
+		</autolevel>
+
 		<autolevel level="4">
 			<feature>
 				<name>Ability Score Improvement</name>
 				<text>When you reach 4th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</text>
 				<text>    If your DM allows the use of feats, you may instead take a feat.</text>
 			</feature>
+		</autolevel>
+
+		<autolevel level="5">
 		</autolevel>
 
 		<autolevel level="6">
@@ -7381,12 +7468,18 @@
 			</feature>
 		</autolevel>
 
+		<autolevel level="7">
+		</autolevel>
+
 		<autolevel level="8">
 			<feature>
 				<name>Ability Score Improvement</name>
 				<text>When you reach 8th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</text>
 				<text>    If your DM allows the use of feats, you may instead take a feat.</text>
 			</feature>
+		</autolevel>
+
+		<autolevel level="9">
 		</autolevel>
 
 		<autolevel level="10">
@@ -7440,12 +7533,18 @@
 			</feature>
 		</autolevel>
 
+		<autolevel level="11">
+		</autolevel>
+
 		<autolevel level="12">
 			<feature>
 				<name>Ability Score Improvement</name>
 				<text>When you reach 12th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</text>
 				<text>    If your DM allows the use of feats, you may instead take a feat.</text>
 			</feature>
+		</autolevel>
+
+		<autolevel level="13">
 		</autolevel>
 
 		<autolevel level="14">
@@ -7549,12 +7648,18 @@
 			</feature>
 		</autolevel>
 
+		<autolevel level="15">
+		</autolevel>
+
 		<autolevel level="16">
 			<feature>
 				<name>Ability Score Improvement</name>
 				<text>When you reach 16th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</text>
 				<text>    If your DM allows the use of feats, you may instead take a feat.</text>
 			</feature>
+		</autolevel>
+
+		<autolevel level="17">
 		</autolevel>
 
 		<autolevel level="18">
