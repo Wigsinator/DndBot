@@ -1,4 +1,4 @@
-ssh -i 'C:\Users\Wigsinator\.ssh\DnD-Bot.pem' ubuntu@54.159.137.34
+ssh -i 'DnD-Bot.pem' ubuntu@54.159.137.34
 cd DndBot
 git pull
 screen
