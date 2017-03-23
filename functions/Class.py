@@ -1,6 +1,6 @@
 import xml.etree.ElementTree as ET
 
-def Class(c,l):
+def Class(c,l,online = True):
 	"""Takes a class and a level, and returns the abilities gained at that level"""
 
 	tree = ET.parse('XMLs/Character Files/Classes 2.5.xml')
@@ -21,6 +21,10 @@ def Class(c,l):
 						abilities.append(ability)
 					break
 			break
-	output = '```' +'\n'+ name +'\n'+ level +'\n'+ '\n'.join(abilities) +'\n'+ '```'
+	if online:
+		output = '```' +'\n'+ name +'\n'+ level +'\n'+ '\n'.join(abilities) +'\n'+ '```'
+	else:
+		output = name +'\n'+ level +'\n'+ '\n'.join(abilities)
+
 	return output
 
