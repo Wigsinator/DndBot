@@ -3,7 +3,7 @@ import asyncio
 import xml.etree.ElementTree as ET
 from functions.Class import Class
 from functions.Help import HelpBot as Help
-from functions.config import prefix
+from functions.config import prefix, game
 
 client = discord.Client()
 
@@ -14,6 +14,7 @@ async def on_ready():
 	print(client.user.name)
 	print(client.user.id)
 	print('------')
+	await client.change_presence(game=game)
 
 @client.event
 async def on_message(message):
