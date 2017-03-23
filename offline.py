@@ -8,7 +8,7 @@ while True:
 		break
 
 	elif text[0] == 'class':
-		print(Class(text[1],text[2]))
+		print(Class(text[1],text[2], False))
 
 	elif text[0] == 'help':
 		if len(text) == 1:
