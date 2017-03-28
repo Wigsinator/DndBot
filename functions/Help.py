@@ -10,34 +10,33 @@ except:
 
 
 GENERAL = ("The DnD bot is here for a quick and easy reference to information found in the player's handbook." +'\n'+ 
-			"{}Created by Wigsinator{}"+'\n'+'\n'+
-			"{}Available commands are:{}" +'\n'+'\n'+
-			"{}class{}: Lists the abilities gained by a given class at a given level" +'\n'+
-			"{}feature{}: Gives a description of an ability granted by a certain class **Not currently functioning**" +'\n'+
-			"{}race{}: Lists the attributes of a given race **Not currently functioning**" +'\n'+'\n'+  
+			"{i}Created by Wigsinator{i}"+'\n'+'\n'+
+			"{u}{b}Available commands are:{b}{u}" +'\n'+'\n'+
+			"{prefix}class{`}: Lists the abilities gained by a given class at a given level." +'\n'+
+			"{prefix}feature{`}: Gives a description of an ability granted by a certain class. {b}Not currently functioning{b}" +'\n'+
+			"{prefix}race{`}: Lists the attributes of a given race. {b}Not currently functioning{b}" +'\n'+'\n'+  
 			"For more details on a particular command, use:" +'\n'+ 
-			"{}help [command]{}"
+			"{prefix}help [command]{`}"
 			)
 
 CLASS = ("The class command lists the abilities gained by a given class at a given level"+'\n'+
 		"Format:"+'\n'+
-		"{}class [class] [level]{}"
+		"{prefix}class [class] [level]{`}"
 		)
 
 FEATURE = "I'm working on it, cool ya jets"
 
-def HelpBot(function = 'general'):
-	if function == 'general':
-		return GENERAL.format('*',"*", "__**", "**__",*["`"+prefix,"`"]*4)
-	if function == 'class':
-		return CLASS.format("`"+prefix,"`")
-	if function == 'feature':
-		return FEATURE
+ONLINE = {'i': "*", "b":"**", "u":"__", "prefix":"`"+prefix, "`":"`"}
+OFFLINE = {'i': "", "b":"", "u":"", "prefix":"", "`":""}
 
-def HelpOffline(function = 'general'):
+def Help(function = 'general', online = True):
+	if online:
+		dic = ONLINE
+	else:
+		dic = OFFLINE
 	if function == 'general':
-		return GENERAL.format(*[""]*9)
+		return GENERAL.format(**dic)
 	if function == 'class':
-		return CLASS.format("","")
+		return CLASS.format(**dic)
 	if function == 'feature':
 		return FEATURE
