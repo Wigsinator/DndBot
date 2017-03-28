@@ -2,7 +2,7 @@ import discord
 import asyncio
 import xml.etree.ElementTree as ET
 from functions.Class import Class
-from functions.Help import HelpBot as Help
+from functions.Help import Help
 from functions.config import prefix, game
 
 client = discord.Client()
