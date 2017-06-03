@@ -1,5 +1,12 @@
-ssh -i 'DnD-Bot.pem' ubuntu@54.159.137.34
+ssh -i 'DnD-Bot.pem' ubuntu@54.226.64.227
 cd DndBot
 git pull
 screen
 python3 bot.py
+
+
+To reboot:
+sudo reboot
+
+To update packages:
+sudo apt-get upgrade
