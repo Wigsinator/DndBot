@@ -1,12 +1,18 @@
 import discord
 import asyncio
+import logging as log
 import xml.etree.ElementTree as ET
 from functions.Class import Class
 from functions.Help import Help
 from functions.config import prefix, game
 
-client = discord.Client()
+logger = log.getLogger('discord')
+logger.setLevel(log.DEBUG)
+handler = log.FileHandler(filename='discord.log', encoding='utf-8', mode='w')
+handler.setFormatter(log.Formatter('%(asctime)s:%(levelname)s:%(name)s: %(message)s'))
+logger.addHandler(handler)
 
+client = discord.Client()
 
 @client.event
 async def on_ready():
